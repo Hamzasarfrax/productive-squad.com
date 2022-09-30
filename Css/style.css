@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-main: hsl(197deg 100% 41%);
+  --bg-text: hsl(0deg 0% 40%);
+  --white-color: #fff;
+  --bg-theme:#f0f4f8;
+  --color: #086AD8;
+  --font-family: "mosk medium", poppins, -apple-system, BlinkMacSystemFont,
+    segoe ui, Roboto, helvetica neue, Arial, noto sans, sans-serif,
+    apple color emoji, segoe ui emoji, segoe ui symbol, noto color emoji;
+}
+
+.header .navbar-expand-lg .navbar-nav {
+  flex-direction: row;
+  margin-left: auto;
+}
+
+.header .navbar {
+  padding: 0px;
+  background-color: var(--white-color);
+  color: var(--bg-text);
+  border-bottom: 2px solid var(--bg-main);
+  height: 80px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  
+}
+
+.header .navbar-expand-lg .navbar-brand .img-responsive {
+  max-width: 100px;
+  margin-top: 10px;
+}
+
+.header .navbar-expand-lg .navbar-nav .nav-link {
+  color: var(--bg-main);
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  font-size: 20px;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  margin-right: 30px;
+}
+
+
+/* this is services section */
+.bg-theme{
+     background-color: var(--bg-theme);
+}
+.service-bar{
+   
+     border-bottom: 4px solid var(--bg-main);
+    position: relative;
+    height: 6px;
+    margin: 20px auto 0;
+    position: relative;
+  border-radius: 4px;
+    overflow: hidden;
+    width: 15%;
+ 
+}
+
+.service-bar::before{
+     content: '';
+     position: absolute;
+     left: 0;
+     top: 0;
+     height: 100%;
+     width: 5px;
+     background-color: #086AD8;
+     animation: move-left 2s linear infinite;
+}
+
+@keyframes move-left {
+     0%{
+          width: 10px;
+     }
+
+     50%{
+          width: 40px;
+     }
+
+     100%{
+          width: 20px;
+     }
+}
+
+.services-box{
+background-color: var(--white-color);
+margin: 10px 0px;
+padding: 15px;
+border-radius: 10px;
+box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+cursor: pointer;
+transition: 0.5s;
+}
+.services-box:hover{
+     background-color: var(--bg-main);
+     color: var(--white-color);
+}
+.services-icon {
+     text-align: center;
+}
+.services-icon i{
+     background-color: #ebebeb ;
+     text-align: center;
+     color: var(--color);
+     padding: 20px;
+     border-top-right-radius: 20px;
+     border-bottom-left-radius: 20px;
+     margin: 10px 0px;
+
+}
+
+.services-text{
+     text-align: center;
+     font-size: 15px;
+     font-weight: 400;
+     font-size: var(--font-family);
+}
+
+.services-btn{
+     margin-left: auto;
+     margin-right: auto;
+     text-transform: capitalize;
+     background-color: var(--bg-main);
+     color: var(--white-color);
+  display: flex;
+  justify-content: center;
+  margin: 15px auto;
+}
+.heading {
+     display: flex;
+     text-align: center;
+     justify-content: center;
+     margin: 10px 0px;
+}
+.heading h1{
+     font-size: 15px;
+     font-weight: bolder;
+     text-transform: capitalize;
+     letter-spacing: 1px;
+}
