@@ -1,0 +1,81 @@
+
+
+/* reponsive layouts */
+/* 
+carousel section navbar bottom */
+@media (min-width:650px) {
+    .inner-text {
+        color: var(--white-color);
+        font-family: var(--font-family);
+        font-size: 15px;
+        text-align: justify;
+        max-width: 40%;
+ 
+      }
+
+
+}
+/* full device */
+
+@media (min-width:576px){
+
+}
+
+@media (min-width:768px) and (max-width:992px){
+    #contact{
+        background-image: none;
+     
+    }
+    .box-contact{
+  margin-left: auto;
+  margin-right: auto;
+    }
+}
+
+@media (min-width:576px) and (max-width:768px){
+    .content-carousel {
+        position: absolute;
+        top: 10%;
+        margin: 56px 20px;
+        color: var(--white-color);
+    
+    }
+    #contact{
+        background-image: none;
+    }
+    .box-contact{
+        margin-left: auto;
+        margin-right: auto;
+          }
+}
+/* mobile devices responsive */
+@media (max-width:576px) {
+    .content-carousel {
+        position: absolute;
+        top: 0%;
+        margin: 56px 20px;
+        color: var(--white-color);
+       
+    }
+    .slider-btn {
+        margin-top: 15px;
+    }
+
+    .heading-slider h1 {
+        text-transform: capitalize;
+        font-weight: bolder;
+        font-family: var(--font-family);
+        font-size: 25px;
+      }
+
+      .heading-task p {
+        margin: 10px 2px;
+    }
+    #contact{
+        background-image: none;
+     
+    }
+    .box-contact{
+
+          }
+}
