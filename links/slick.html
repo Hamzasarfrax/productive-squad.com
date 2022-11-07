@@ -1,0 +1,48 @@
+<html>
+  <head>
+  <title>My Now Amazing Webpage</title>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"/>
+
+  </head>
+  <body>
+
+<div class="slider-for d1">
+    <div><a href="https://kenwheeler.github.io/slick/">1</a></div>
+  <div><a href="https://kenwheeler.github.io/slick/">2</a></div>
+</div>
+
+<div class="slider-nav d2">
+    <div><a href="https://kenwheeler.github.io/slick/">1</a></div>
+    <div><a href="https://kenwheeler.github.io/slick/">2</a></div>
+    <div><a href="https://kenwheeler.github.io/slick/">3</a></div>
+    <div><a href="https://kenwheeler.github.io/slick/">4</a></div>
+    <div><a href="https://kenwheeler.github.io/slick/">5</a></div>
+</div>
+
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"></script>
+<script>
+   $('.slider-for').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false,
+  fade: true,
+  asNavFor: '.slider-nav'
+});
+$('.slider-nav').slick({
+  autoplay: true,
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  asNavFor: '.slider-for',
+  dots: true,
+  centerMode: true,
+  focusOnSelect: true
+});
+
+</script>
+ 
+
+  </body>
+</html>
