@@ -17,7 +17,9 @@ carousel section navbar bottom */
 }
 /* full device */
 @media (max-width:768px){
-
+    .services-box{
+        height: auto !important;
+    }
     .desktop-header{
         display: none !important;
     }
