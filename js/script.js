@@ -1,22 +1,16 @@
 
-// window.addEventListener("load" , function(){
- 
-//   this.document.body.style.display="none"
-//   this.setTimeout(()=>{
-// this.document.body.style.display="block"
-//   },4000)
-// })
+document.onscroll=function(){
+	let text = document.getElementById("animated_scroll")
+let scrol = document.body.scrollTop || document.documentElement.scrollTop;
+if (scrol === 0) {
+  setInterval(() => {
+	text.classList.add("active")
+  }, 800)
+}
+else if (scrol > 0) {
+  text.classList.remove("active")
+}
+}
 
 
-document.onreadystatechange = function() {
-	if (document.readyState !== "complete") {
-        
-		document.getElementsByTagName("body").style.visibility = "hidden";
-		document.getElementById("loader").style.display = "block";
-	} else {
-	setTimeout(()=>{
-        document.getElementById("loader").style.display = "none";
-		document.getElementsByTagName("body").style.visibility = "visible";
-    },250000)
-	}
-};
+

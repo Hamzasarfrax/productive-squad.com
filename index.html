@@ -28,6 +28,23 @@
 </head>
 
 <body>
+  <section class="section_animate" id="loader">
+    <div class="container ">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="animation_spinner">
+            <div class="animated_img">
+              <img src="./images/Productive Squad Logo-02.png" alt="" class=" img-fluid">
+            </div>
+            <div class="still_animate_img">
+              <img src="./images/Productive Squad Logo-03.png" alt="" class=" img-fluid">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
   <Header class="header">
     <div class="mobile-header">
       <div class="container-fluid">
@@ -96,19 +113,22 @@
           .bar {
             height: 5px;
             border-radius: 10px;
+
             background-color: hsl(197deg 100% 41%);
             position: absolute;
             top: 100%;
           }
         </style>
         <script>
-          Window.addEventListener("scroll", function () {
+          window.onscroll = function () {
+            scrollingbar()
+          }
+          function scrollingbar() {
             let winscrooll = document.body.scrollTop || document.documentElement.scrollTop;
             let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
             let scrolled = (winscrooll / height) * 100
             document.getElementById("progress").style.width = scrolled + "%"
-            console.log(scrolled)
-          }) 
+          }
         </script>
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
@@ -844,24 +864,8 @@
     </section>
   </main>
 
-  <section class="section_animate" id="loader">
-    <div class="container ">
-      <div class="row">
-        <div class="col-sm-12">
-          <div class="animation_spinner">
-            <div class="animated_img">
-              <img src="./images/Productive Squad Logo-02.png" alt="" class=" img-fluid">
-            </div>
-            <div class="still_animate_img">
-              <img src="./images/Productive Squad Logo-03.png" alt="" class=" img-fluid">
-            </div>
-          </div>
-        </div>
-      </div>
 
-    </div>
 
-  </section>
   <!-- footer code -->
   <div class="footer-basic">
     <footer>
@@ -869,7 +873,7 @@
           <i class="fa-brands fa-facebook-f"></i>
         </a><a href="https://www.instagram.com/invites/contact/?i=1x7yjsr9if4tx&utm_content=pyplvia" target="_blank">
           <i class="fa-brands fa-instagram"></i></a>
-        <a href="" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://www.linkedin.com/in/productive-squad-7807a3256" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
 
 
       </div>
@@ -884,25 +888,25 @@
   </div>
 </body>
 <script>
-  Window.load = function () {
-    alert("djkjhdhg")
-  }
-</script>
-<script type="text/javascript">
-  Window.addEventListener("scroll", function () {
-    let text = document.getElementById("animated_scroll")
-    let scrol = document.body.scrollTop || document.documentElement.scrollTop;
-    if (scrol === 0) {
-      setInterval(() => {
-        text.classList.add("active")
-      }, 1000)
-    }
-    else if (scrol > 0) {
-      text.classList.remove("active")
-    }
-  })
+		document.onreadystatechange = function() {
+			if (document.readyState !== "complete") {
+				document.querySelector(
+				"body").style.visibility = "hidden";
+				setTimeout(()=>{
+          document.querySelector(
+				"#loader").style.visibility = "visible";
+        },1000)
+			} else {
+setTimeout(()=>{
+  document.querySelector(
+				"#loader").style.display = "none";
+				document.querySelector(
+				"body").style.visibility = "visible";
+},5000)
+			}
+		};
+	</script>
 
-</script>
 <script>
   setInterval(() => {
     let counts = setInterval(counter2, 1000)
@@ -1040,35 +1044,10 @@
     x[n].className += " active";
   }
 
-  window.load = (e) => {
-    document.body.innerHTML = "loading"
-  }
-  window.onload = (event) => {
-    // alert("testing")
-    setTimeout(() => {
-
-      let modal = document.getElementById("exampleModal")
-      modal.classList.add("active")
-    }, 15000);
-
-  };
+  
 </script>
 <script>
-  let form = document.getElementById("myform");
-  form.addEventListener("submit",
-    function () {
-      alert("testing")
-    })
-  const boxes = document.querySelectorAll('.nav-link');
-
-  boxes.forEach(box => {
-    box.addEventListener('click', function handleClick(event) {
-      box.classList.toggle("active")
-
-
-    });
-  });
-
+ 
   $(document).ready(function () {
     $('.your-class').slick({
       slidesToShow: 1,

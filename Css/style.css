@@ -17,7 +17,7 @@
 }
 
 body {
-  overflow-x: hidden;
+
   scroll-behavior: smooth;
 }
 
@@ -1380,17 +1380,24 @@ width: 100%;
 padding: 10px;
 }
 /* loading spinner */
+
 .animation_spinner{
-  /* position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%,-50%); */
+background-color: rgb(37, 27, 27);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 10%;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #bbbbbb !important;
+  opacity: 1 !important;
 }
+
 .section_animate .animated_img img{
   width: 100px;
   position: relative;
