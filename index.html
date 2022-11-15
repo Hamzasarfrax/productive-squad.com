@@ -102,16 +102,13 @@
           }
         </style>
         <script>
-          window.onscroll = function () {
-            scrollingbar()
-          }
-          function scrollingbar() {
+          Window.addEventListener("scroll", function () {
             let winscrooll = document.body.scrollTop || document.documentElement.scrollTop;
             let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
             let scrolled = (winscrooll / height) * 100
             document.getElementById("progress").style.width = scrolled + "%"
             console.log(scrolled)
-          }
+          }) 
         </script>
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
@@ -170,21 +167,7 @@
         </div>
       </div>
       </div>
-      <script>
-        let text = document.getElementById("animated_scroll")
-        let scrol = document.body.scrollTop || document.documentElement.scrollTop;
-        if (scrol === 0) {
-          setInterval(() => {
-            text.classList.add("active")
-          }, 2000)
-        }
-        else if (scrol > 0) {
-          text.classList.remove("active")
-        }
 
-        console.log(scroll)
-
-      </script>
     </section>
     <section>
       <div class="row">
@@ -626,7 +609,8 @@
               </p>
               <div class="collapse" id="collapseExample2">
                 <div class="card card-body">
-                  <a href="https://play.google.com/store/apps/details?id=com.belltell.lite&hl=en_US&gl=US">Belltell</a>
+                  <a href="https://play.google.com/store/apps/details?id=com.belltell.lite&hl=en_US&gl=US"
+                    target="_blank">Belltell</a>
                 </div>
               </div>
             </div>
@@ -701,7 +685,7 @@
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
-              <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+              <h1 class="modal-title fs-5" id="exampleModalLabel">implement my idea</h1>
               <button type="button" class="btn btn-remove" data-bs-dismiss="modal" aria-label="Close">
                 <div class="icon-modal">
                   <i class="fa-solid fa-xmark"></i>
@@ -859,55 +843,94 @@
       </div>
     </section>
   </main>
+
+  <section class="section_animate" id="loader">
+    <div class="container ">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="animation_spinner">
+            <div class="animated_img">
+              <img src="./images/Productive Squad Logo-02.png" alt="" class=" img-fluid">
+            </div>
+            <div class="still_animate_img">
+              <img src="./images/Productive Squad Logo-03.png" alt="" class=" img-fluid">
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
   <!-- footer code -->
   <div class="footer-basic">
     <footer>
-      <div class="social"><a href="#">
+      <div class="social"><a href="https://www.facebook.com/profile.php?id=100087450259352" target="_blank">
           <i class="fa-brands fa-facebook-f"></i>
-        </a><a href="#">
-          <i class="fa-brands fa-instagram"></i></a><a href="https://www.facebook.com/profile.php?id=100087450259352">
-          <i class="fa-brands fa-twitter"></i></a><a href="#">
-          <i class="fa-brands fa-github"></i></a>
+        </a><a href="https://www.instagram.com/invites/contact/?i=1x7yjsr9if4tx&utm_content=pyplvia" target="_blank">
+          <i class="fa-brands fa-instagram"></i></a>
+        <a href="" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+
+
       </div>
       <ul class="list-inline">
         <li class="list-inline-item"><a href="/index.html">Home</a></li>
         <li class="list-inline-item"><a href="#services">Services</a></li>
         <li class="list-inline-item"><a href="/About_us.html">About</a></li>
-        <li class="list-inline-item"><a href="#">Terms</a></li>
-        <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+
       </ul>
-      <p class="copyright">Company Name © 2022</p>
+      <p class="copyright">productive squad © 2022</p>
     </footer>
   </div>
 </body>
 <script>
+  Window.load = function () {
+    alert("djkjhdhg")
+  }
+</script>
+<script type="text/javascript">
+  Window.addEventListener("scroll", function () {
+    let text = document.getElementById("animated_scroll")
+    let scrol = document.body.scrollTop || document.documentElement.scrollTop;
+    if (scrol === 0) {
+      setInterval(() => {
+        text.classList.add("active")
+      }, 1000)
+    }
+    else if (scrol > 0) {
+      text.classList.remove("active")
+    }
+  })
+
+</script>
+<script>
   setInterval(() => {
-    let counts = setInterval(counter2)
+    let counts = setInterval(counter2, 1000)
     let upto = 0;
     function counter2() {
 
       var counter_ternary = document.getElementById("counter_secondary")
       counter_ternary.innerHTML = ++upto
       if (upto === 8) {
-        clearInterval(counts, 9000)
+        clearInterval(counts, 15000)
       }
     }
   }, 2000);
   setInterval(() => {
-    let counts = setInterval(counter3)
+    let counts = setInterval(counter3, 1000)
     let upto = 0;
     function counter3() {
 
       var counter_ternary = document.getElementById("counter_ternary")
       counter_ternary.innerHTML = ++upto
       if (upto === 8) {
-        clearInterval(counts, 9000)
+        clearInterval(counts, 15000)
       }
     }
-  }, 3000);
+  }, 1000);
 
   setInterval(() => {
-    let counts = setInterval(updated);
+    let counts = setInterval(updated, 1000);
 
 
     let upto = 0;
@@ -916,13 +939,14 @@
       var count = document.getElementById("counter_primary");
       count.innerHTML = ++upto;
       if (upto === 8) {
-        clearInterval(counts, 9000);
+        clearInterval(counts, 2000);
       }
     }
 
-  }, 3000);
+  }, 1000);
 
 </script>
+<script src="./js/script.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
   integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"

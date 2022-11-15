@@ -21,7 +21,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
     integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="shortcut icon" type="image/png" href="../images/logo.png"/>
+  <link rel="shortcut icon" type="image/png" href="../images/logo.png" />
 </head>
 <title>Login</title>
 </head>
@@ -83,7 +83,7 @@
 
 
                       <li class="nav-item ">
-                        <a class="nav-link active" href="/login.html">login 
+                        <a class="nav-link active" href="/login.html">login
 
                           <i class="fa fa-sign-in" aria-hidden="true"></i>
                         </a>
@@ -102,28 +102,28 @@
     <!-- this is desktop nav -->
     <div class="desktop-header">
       <nav class="navbar navbar-expand-md">
-        <div id="progress" class="bar_sec" ></div>
-            <style>
-              .bar_sec{
-              height: 5px;
-              border-radius: 10px;
+        <div id="progress" class="bar_sec"></div>
+        <style>
+          .bar_sec {
+            height: 5px;
+            border-radius: 10px;
 
-                background-color: hsl(197deg 100% 41%);
-                position: absolute;
-    top: 100%;
-              }
-            </style>
-            <script>
-              window.onscroll=function(){
-              scrollingbar()
-              }
-              function scrollingbar(){
-                let winscrooll=document.body.scrollTop ||document.documentElement.scrollTop;
-                let height=document.documentElement.scrollHeight-document.documentElement.clientHeight;
-                let scrolled=(winscrooll/height)*100
-                document.getElementById("progress").style.width=scrolled+"%"
-              }
-            </script>
+            background-color: hsl(197deg 100% 41%);
+            position: absolute;
+            top: 100%;
+          }
+        </style>
+        <script>
+          window.onscroll = function () {
+            scrollingbar()
+          }
+          function scrollingbar() {
+            let winscrooll = document.body.scrollTop || document.documentElement.scrollTop;
+            let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            let scrolled = (winscrooll / height) * 100
+            document.getElementById("progress").style.width = scrolled + "%"
+          }
+        </script>
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
             <div class="head-img">
@@ -162,76 +162,95 @@
 
 
   <main>
-    <section class="login bg-theme" >
-   
-<div class="container">
-<div class="row">
-  <div class="main_login_form">
-    <div class="box_form">
-   
-     <form  id="myForm" >
-         <div class="text-center heading-main">
-        <p>     login</p>
-         </div>
-         <div class="group">      
-           <input type="text"  id="name" required>
-           <span class="highlight"></span>
-           <span class="bar_secondary"></span>
-           <label>Name</label>
-           <div class="show_validation text-danger text-capitalize" id="name_valid"></div>
-         </div>
-           
-         <div class="group">      
-           <input type="text"   id="email" required> 
-           <span class="highlight"></span>
-           <span class="bar_secondary"></span>
-           <label>Email</label>
-           <div class="show_validation text-danger text-capitalize" id="email_valid"></div>
-         </div>
-         <button class="btn btn-login" type="submit" href="#">Submit</button>
-       </form>
-    </div>
- </div>
-</div>
-</div>
-<div aria-live="polite" aria-atomic="true" class="d-flex justify-content-center align-items-center" style="min-height: 200px;">
+    <section class="login bg-theme">
 
-  <!-- Then put toasts within -->
-  <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
-    <div class="toast-header">
-      <img src="..." class="rounded mr-2" alt="...">
-      <strong class="mr-auto">Bootstrap</strong>
-      <small>11 mins ago</small>
-      <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
-        <span aria-hidden="true">&times;</span>
-      </button>
-    </div>
-    <div class="toast-body">
-      Hello, world! This is a toast message.
-    </div>
-  </div>
-</div>
+      <div class="container">
+        <div class="row">
+          <div class="main_login_form">
+            <div class="box_form">
+
+              <form id="myForm">
+                <div class="text-center heading-main">
+                  <p> login</p>
+                </div>
+                <div class="group">
+                  <input type="text" id="name" required>
+                  <span class="highlight"></span>
+                  <span class="bar_secondary"></span>
+                  <label>Name</label>
+                  <div class="show_validation text-danger text-capitalize" id="name_valid"></div>
+                </div>
+
+                <div class="group">
+                  <input type="text" id="email" required>
+                  <span class="highlight"></span>
+                  <span class="bar_secondary"></span>
+                  <label>Email</label>
+                  <div class="show_validation text-danger text-capitalize" id="email_valid"></div>
+                </div>
+                <button class="btn btn-login" type="submit" href="#">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div aria-live="polite" aria-atomic="true" class="d-flex justify-content-center align-items-center"
+        style="min-height: 200px;">
+
+        <!-- Then put toasts within -->
+        <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+          <div class="toast-header">
+            <img src="..." class="rounded mr-2" alt="...">
+            <strong class="mr-auto">Bootstrap</strong>
+            <small>11 mins ago</small>
+            <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="toast-body">
+            Hello, world! This is a toast message.
+          </div>
+        </div>
+      </div>
     </section>
-    
+
   </main>
 
+  <section class="section_animate" id="loader">
+    <div class="container ">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="animation_spinner">
+            <div class="animated_img">
+              <img src="./images/Productive Squad Logo-02.png" alt="" class=" img-fluid">
+            </div>
+            <div class="still_animate_img">
+              <img src="./images/Productive Squad Logo-03.png" alt="" class=" img-fluid">
+            </div>
+          </div>
+        </div>
+      </div>
 
+    </div>
+
+  </section>
   <div class="footer-basic">
     <footer>
-      <div class="social"><a href="#">
+      <div class="social"><a href="https://www.facebook.com/profile.php?id=100087450259352" target="_blank">
           <i class="fa-brands fa-facebook-f"></i>
-        </a><a href="https://www.facebook.com/profile.php?id=100087450259352">
-          <i class="fa-brands fa-instagram"></i></a><a href="#">
-          <i class="fa-brands fa-twitter"></i></a><a href="#">
-          <i class="fa-brands fa-github"></i></a></div>
+        </a><a href="https://www.instagram.com/invites/contact/?i=1x7yjsr9if4tx&utm_content=pyplvia" target="_blank">
+          <i class="fa-brands fa-instagram"></i></a>
+        <a href="" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+
+
+      </div>
       <ul class="list-inline">
         <li class="list-inline-item"><a href="/home.html">Home</a></li>
         <li class="list-inline-item"><a href="#services">Services</a></li>
         <li class="list-inline-item"><a href="/About_us.html">About</a></li>
-        <li class="list-inline-item"><a href="#">Terms</a></li>
-        <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+
       </ul>
-      <p class="copyright">Company Name © 2022</p>
+      <p class="copyright">productive squad © 2022</p>
     </footer>
   </div>
 </body>
@@ -239,35 +258,34 @@
   integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
   integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
-  <script
-  src="https://code.jquery.com/jquery-3.6.1.min.js"
-  integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
-  crossorigin="anonymous"></script>
-<script type="text/javscript" src="../js/script.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.1.min.js"
+  integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+<script src="./js/script.js"></script>
 
 <script>
-  let myForm=document.getElementById("myForm")
+  let myForm = document.getElementById("myForm")
 
-  myForm.addEventListener("submit" ,function(){
+  myForm.addEventListener("submit", function () {
     event.preventDefault();
-let box_valid_name=document.getElementById("name_valid")
-let box_valid_email=document.getElementById("email_valid")
-    let name=document.getElementById("name").value;
-    let email=document.getElementById("email").value;
-    if(name==="" ||email===""){
-      box_valid_name.innerHTML="name is required "
-      box_valid_email.innerHTML="email is required "
+    let box_valid_name = document.getElementById("name_valid")
+    let box_valid_email = document.getElementById("email_valid")
+    let name = document.getElementById("name").value;
+    let email = document.getElementById("email").value;
+    if (name === "" || email === "") {
+      box_valid_name.innerHTML = "name is required "
+      box_valid_email.innerHTML = "email is required "
       return false
     }
-else{
-  box_valid_name.innerHTML=" "
-      box_valid_email.innerHTML=" "
-      let items={name ,email}
-alert(JSON.stringify(items))
+    else {
+      box_valid_name.innerHTML = " "
+      box_valid_email.innerHTML = " "
+      let items = { name, email }
+      alert(JSON.stringify(items))
     }
 
-   
+
   })
- 
+
 </script>
+
 </html>

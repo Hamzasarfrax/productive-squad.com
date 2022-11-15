@@ -21,7 +21,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
     integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="shortcut icon" type="image/png" href="../images/logo.png"/>
+  <link rel="shortcut icon" type="image/png" href="../images/logo.png" />
 </head>
 <title>Contact_Us</title>
 </head>
@@ -83,7 +83,7 @@
 
 
                       <li class="nav-item">
-                        <a class="nav-link" href="/login.html">login 
+                        <a class="nav-link" href="/login.html">login
 
                           <i class="fa fa-sign-in" aria-hidden="true"></i>
                         </a>
@@ -102,28 +102,28 @@
     <!-- this is desktop nav -->
     <div class="desktop-header">
       <nav class="navbar navbar-expand-md">
-        <div id="progress" class="bar" ></div>
-            <style>
-              .bar{
-              height: 5px;
-              border-radius: 10px;
+        <div id="progress" class="bar"></div>
+        <style>
+          .bar {
+            height: 5px;
+            border-radius: 10px;
 
-                background-color: hsl(197deg 100% 41%);
-                position: absolute;
-    top: 100%;
-              }
-            </style>
-            <script>
-              window.onscroll=function(){
-              scrollingbar()
-              }
-              function scrollingbar(){
-                let winscrooll=document.body.scrollTop ||document.documentElement.scrollTop;
-                let height=document.documentElement.scrollHeight-document.documentElement.clientHeight;
-                let scrolled=(winscrooll/height)*100
-                document.getElementById("progress").style.width=scrolled+"%"
-              }
-            </script>
+            background-color: hsl(197deg 100% 41%);
+            position: absolute;
+            top: 100%;
+          }
+        </style>
+        <script>
+          window.onscroll = function () {
+            scrollingbar()
+          }
+          function scrollingbar() {
+            let winscrooll = document.body.scrollTop || document.documentElement.scrollTop;
+            let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            let scrolled = (winscrooll / height) * 100
+            document.getElementById("progress").style.width = scrolled + "%"
+          }
+        </script>
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
             <div class="head-img">
@@ -226,23 +226,41 @@
     </section>
   </main>
 
+  <section class="section_animate" id="loader">
+    <div class="container ">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="animation_spinner">
+            <div class="animated_img">
+              <img src="./images/Productive Squad Logo-02.png" alt="" class=" img-fluid">
+            </div>
+            <div class="still_animate_img">
+              <img src="./images/Productive Squad Logo-03.png" alt="" class=" img-fluid">
+            </div>
+          </div>
+        </div>
+      </div>
 
+    </div>
+
+  </section>
   <div class="footer-basic">
     <footer>
-      <div class="social"><a href="https://www.facebook.com/profile.php?id=100087450259352">
+      <div class="social"><a href="https://www.facebook.com/profile.php?id=100087450259352" target="_blank">
           <i class="fa-brands fa-facebook-f"></i>
-        </a><a href="#">
-          <i class="fa-brands fa-instagram"></i></a><a href="#">
-          <i class="fa-brands fa-twitter"></i></a><a href="#">
-          <i class="fa-brands fa-github"></i></a></div>
+        </a><a href="https://www.instagram.com/invites/contact/?i=1x7yjsr9if4tx&utm_content=pyplvia" target="_blank">
+          <i class="fa-brands fa-instagram"></i></a>
+        <a href="" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+
+
+      </div>
       <ul class="list-inline">
         <li class="list-inline-item"><a href="./index.html">Home</a></li>
         <li class="list-inline-item"><a href="#services">Services</a></li>
         <li class="list-inline-item"><a href="./About_us.html">About</a></li>
-        <li class="list-inline-item"><a href="#">Terms</a></li>
-        <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+
       </ul>
-      <p class="copyright">Company Name © 2022</p>
+      <p class="copyright">productive squad © 2022</p>
     </footer>
   </div>
 </body>
@@ -250,6 +268,6 @@
   integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
   integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
-<script type="text/javscript" src="../js/script.js"></script>
+<script src="./js/script.js"></script>
 
 </html>

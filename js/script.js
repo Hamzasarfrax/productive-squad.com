@@ -1,18 +1,22 @@
 
-
-function submition(event){
-    event.preventDefault()
-    let required=document.querySelector(".required");
-let form_control=document.querySelector(".form-control")
-if(form_control.value <5){
-   required.innerHTML=" is required"
-}
-    
-}
+// window.addEventListener("load" , function(){
+ 
+//   this.document.body.style.display="none"
+//   this.setTimeout(()=>{
+// this.document.body.style.display="block"
+//   },4000)
+// })
 
 
-
-
-console.log(particle)
-
-
+document.onreadystatechange = function() {
+	if (document.readyState !== "complete") {
+        
+		document.getElementsByTagName("body").style.visibility = "hidden";
+		document.getElementById("loader").style.display = "block";
+	} else {
+	setTimeout(()=>{
+        document.getElementById("loader").style.display = "none";
+		document.getElementsByTagName("body").style.visibility = "visible";
+    },250000)
+	}
+};
