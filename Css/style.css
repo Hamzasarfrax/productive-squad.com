@@ -30,6 +30,7 @@ html {
 body::-webkit-scrollbar {
   background-color: transparent;
   width: 8px;
+  z-index: 10;
 }
 
 body::-webkit-scrollbar-thumb {
@@ -1052,7 +1053,7 @@ input:focus~.bar_secondary:after {
 }
 
 .input-box {
-  margin-top: 20px;
+  margin-top: 30px;
   margin-bottom: 20px;
 }
 
@@ -1272,8 +1273,14 @@ input.invalid {
   border: 2px solid red;
 }
 
-.form-group .required {
-  color: red;
+ .required {
+  color: red !important;
+  text-transform: capitalize;
+  font-family: var(--font-family);
+  font-weight: 500;
+  float: left !important;
+ 
+
 }
 
 /* Hide all steps by default: */
@@ -1394,8 +1401,9 @@ background-color: rgb(37, 27, 27);
   bottom: 0;
   width: 100vw;
   height: 100vh;
-  background-color: #bbbbbb !important;
+  /* background-color: #bbbbbb !important; */
   opacity: 1 !important;
+  z-index: 10000;
 }
 
 .section_animate .animated_img img{

@@ -27,8 +27,8 @@
 <title>Home</title>
 </head>
 
-<body>
-  <section class="section_animate" id="loader">
+<body onload="loader()">
+  <section class="section_animate" id="loader" style="z-index:9999;">
     <div class="container ">
       <div class="row">
         <div class="col-sm-12">
@@ -887,25 +887,7 @@
     </footer>
   </div>
 </body>
-<script>
-		document.onreadystatechange = function() {
-			if (document.readyState !== "complete") {
-				document.querySelector(
-				"body").style.visibility = "hidden";
-				setTimeout(()=>{
-          document.querySelector(
-				"#loader").style.visibility = "visible";
-        },1000)
-			} else {
-setTimeout(()=>{
-  document.querySelector(
-				"#loader").style.display = "none";
-				document.querySelector(
-				"body").style.visibility = "visible";
-},5000)
-			}
-		};
-	</script>
+
 
 <script>
   setInterval(() => {

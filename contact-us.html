@@ -1,273 +1,264 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-  <link rel="stylesheet" href="../Css/style.css">
-  <link rel="stylesheet" href="../Css/responsive.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
-    integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
-    integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
-    integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="shortcut icon" type="image/png" href="../images/logo.png" />
-</head>
-<title>Contact_Us</title>
-</head>
-
-<body>
-
-  <Header class="header">
-    <div class="mobile-header">
-      <div class="container-fluid">
-        <div class="row accordion-item">
-          <div class="col-10">
-            <div class="head-img">
-              <img src="../images/logo.png" alt="" class="img-fluid">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="../Css/style.css">
+    <link rel="stylesheet" href="../Css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+      integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+      integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+      integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" type="image/png" href="../images/logo.png" />
+  </head>
+  <title>Contact_Us</title>
+  </head>
+  <body onload="loader()">
+    <section class="section_animate" id="loader" style="z-index:9999;">
+      <div class="container ">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="animation_spinner">
+              <div class="animated_img">
+                <img src="./images/Productive Squad Logo-02.png" alt="" class=" img-fluid">
+              </div>
+              <div class="still_animate_img">
+                <img src="./images/Productive Squad Logo-03.png" alt="" class=" img-fluid">
+              </div>
             </div>
-
           </div>
-
-          <div class="col-2 ">
-            <div class="canvas-togle">
-              <button class="btn-canvas" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
-                aria-controls="offcanvasRight">
-
-                <div class="icon-canvas">
-                  <i class="fa-solid fa-bars"></i>
-                </div>
-              </button>
-
-              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
-                aria-labelledby="offcanvasRightLabel">
-                <div class="offcanvas-header">
-                  <h5 class="offcanvas-title" id="offcanvasRightLabel">
-                    <div class="head-img">
-                      <img src="../images/logo.png" alt="" class="img-fluid">
-                    </div>
-                  </h5>
-                  <button type="button" class=" btn-canvas-close" data-bs-dismiss="offcanvas">
+        </div>
+      </div>
+  
+    </section>
+    <Header class="header">
+      <div class="mobile-header">
+        <div class="container-fluid">
+          <div class="row accordion-item">
+            <div class="col-10">
+              <div class="head-img">
+                <img src="../images/logo.png" alt="" class="img-fluid">
+              </div>
+            </div>
+            <div class="col-2 ">
+              <div class="canvas-togle">
+                <button class="btn-canvas" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                  aria-controls ="offcanvasRight">
+                  <div class="icon-canvas">
+                    <i class="fa-solid fa-bars"></i>
+                  </div>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                  aria-labelledby="offcanvasRightLabel">
+                  <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasRightLabel">
+                      <div class="head-img">
+                        <img src="../images/logo.png" alt="" class="img-fluid">
+                      </div>
+                    </h5>
+                    <button type="button" class=" btn-canvas-close" data-bs-dismiss="offcanvas">
                     <i class="fa-solid fa-xmark"></i>
-
-                  </button>
-                </div>
-                <div class="offcanvas-body">
-                  <nav>
-                    <ul class="nav">
-                      <li class="nav-item">
-                        <a class="nav-link " aria-current="page" href="/index.html">home <i
+                    </button>
+                  </div>
+                  <div class="offcanvas-body">
+                    <nav>
+                      <ul class="nav">
+                        <li class="nav-item">
+                          <a class="nav-link " aria-current="page" href="/index.html">home <i
                             class="fa-solid fa-house-user"></i></a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="/About_us.html">about-us
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="/About_us.html">about-us
                           <i class="fa fa-info-circle" aria-hidden="true"></i>
-                        </a>
-                      </li>
-                      <li class="nav-item ">
-                        <a class="nav-link active" href="/contact-us.html">contact-us
-
+                          </a>
+                        </li>
+                        <li class="nav-item ">
+                          <a class="nav-link active" href="/contact-us.html">contact-us
                           <i class="fa fa-phone" aria-hidden="true"></i>
-                        </a>
-                      </li>
-
-
-                      <li class="nav-item">
-                        <a class="nav-link" href="/login.html">login
-
+                          </a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="/login.html">login
                           <i class="fa fa-sign-in" aria-hidden="true"></i>
-                        </a>
-                      </li>
-
-                    </ul>
-                  </nav>
-
+                          </a>
+                        </li>
+                      </ul>
+                    </nav>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <!-- this is desktop nav -->
-    <div class="desktop-header">
-      <nav class="navbar navbar-expand-md">
-        <div id="progress" class="bar"></div>
-        <style>
-          .bar {
+      <!-- this is desktop nav -->
+      <div class="desktop-header">
+        <nav class="navbar navbar-expand-md">
+          <div id="progress" class="bar"></div>
+          <style>
+            .bar {
             height: 5px;
             border-radius: 10px;
-
             background-color: hsl(197deg 100% 41%);
             position: absolute;
             top: 100%;
-          }
-        </style>
-        <script>
-          window.onscroll = function () {
-            scrollingbar()
-          }
-          function scrollingbar() {
-            let winscrooll = document.body.scrollTop || document.documentElement.scrollTop;
-            let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-            let scrolled = (winscrooll / height) * 100
-            document.getElementById("progress").style.width = scrolled + "%"
-          }
-        </script>
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <div class="head-img">
-              <img src="../images/logo.png" alt="" class="img-fluid">
-            </div>
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-            aria-label="Toggle navigation">
+            }
+          </style>
+          <script>
+            window.onscroll = function () {
+              scrollingbar()
+            }
+            function scrollingbar() {
+              let winscrooll = document.body.scrollTop || document.documentElement.scrollTop;
+              let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+              let scrolled = (winscrooll / height) * 100
+              document.getElementById("progress").style.width = scrolled + "%"
+            }
+          </script>
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+              <div class="head-img">
+                <img src="../images/logo.png" alt="" class="img-fluid">
+              </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent" aria-controls ="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav   mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link " aria-current="page" href="/index.html">Home</a>
-              </li>
-
-              <li class="nav-item">
-                <a class="nav-link " href="/About_us.html">about-us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="/contact-us.html">contact-us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/login.html">login</a>
-              </li>
-
-
-            </ul>
-
-          </div>
-        </div>
-      </nav>
-    </div>
-  </Header>
-
-
-
-
-  <main>
-    <section>
-      <div class="bg-theme" id="contact">
-        <div class="container">
-          <div class="row text-center">
-
-            <div class="col-sm-6">
-              <div class="contact_img">
-                <img src="../images/conatct_!.png" alt="" class="w-100 img-fluid">
-              </div>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav   mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link " aria-current="page" href="/index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="/About_us.html">about-us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="/contact-us.html">contact-us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/login.html">login</a>
+                </li>
+              </ul>
             </div>
-            <div class="col-sm-6">
-
-              <div class="box-contact">
-                <div class="heading-contact  ">
-                  <h1 class="text-capitalize">contact-us</h1>
+          </div>
+        </nav>
+      </div>
+    </Header>
+    <main>
+      <section>
+        <div class="bg-theme" id="contact">
+          <div class="container">
+            <div class="row text-center">
+              <div class="col-sm-6">
+                <div class="contact_img">
+                  <img src="../images/conatct_!.png" alt="" class="w-100 img-fluid">
                 </div>
-                <form name="myform" method="post" action="abc.jsp" onsubmit="return validateform()">
-                  <div class="input-box">
-                    <label for=""> name <span class="required"></span></label>
-                    <div class="icon-contact">
-                      <i class="fa-solid fa-user"></i>
-                    </div>
-
-                    <input type="text" class="form-control">
-
+              </div>
+              <div class="col-sm-6">
+                <div class="box-contact">
+                  <div class="heading-contact  ">
+                    <h1 class="text-capitalize">contact-us</h1>
                   </div>
-                  <div class="input-box">
-                    <label for=""> fullname <span class="required"></span></label>
-                    <div class="icon-contact">
-                      <i class="fa-solid fa-user"></i>
+                  <form name="myform" >
+                    <div class="input-box">
+                      <label for=""> name 
+                      </label> 
+                      <div class="icon-contact">
+                        <i class="fa-solid fa-user"></i>
+                      </div>
+                      <input type="text" class="form-control"  >
+                      <span class="required"></span>
                     </div>
-                    <input type="text" class="form-control">
-                  </div>
-                  <div class="input-box">
-                    <label for=""> email <span class="required"></span></label>
-                    <div class="icon-contact">
-                      <i class="fa-solid fa-envelope"></i>
+                    <div class="input-box">
+                      <label for=""> fullname 
+                      </label>
+                      <div class="icon-contact">
+                        <i class="fa-solid fa-user"></i>
+                      </div>
+                      <input type="text" class="form-control" >
+                      <span class="required"></span>
                     </div>
-                    <input type="text" class="form-control">
-                  </div>
-                  <div class="input-box">
-                    <label for=""> contact-num <span class="required"></span></label>
-                    <div class="icon-contact">
-                      <i class="fa-solid fa-phone"></i>
+                    <div class="input-box">
+                      <label for=""> email 
+                      </label>
+                      <div class="icon-contact">
+                        <i class="fa-solid fa-envelope"></i>
+                      </div>
+                      <input type="text" class="form-control" >
+                      <span class="required"></span>
                     </div>
-                    <input type="text" class="form-control">
-                  </div>
-                </form>
-                <div class="btn-contact">
-                  <button type="submit" class="btn-submit">
+                    <div class="input-box">
+                      <label for=""> contact-num </label>
+                      <div class="icon-contact">
+                        <i class="fa-solid fa-phone"></i>
+                      </div>
+                      <input type="text" class="form-control" >
+                      <span class="required"></span>
+                    </div>
+                  </form>
+                  <div class="btn-contact">
+                    <button type="submit" class="btn-submit" onclick="validation()">
                     submit
-                  </button>
-
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-  </main>
-
-  <section class="section_animate" id="loader">
-    <div class="container ">
-      <div class="row">
-        <div class="col-sm-12">
-          <div class="animation_spinner">
-            <div class="animated_img">
-              <img src="./images/Productive Squad Logo-02.png" alt="" class=" img-fluid">
-            </div>
-            <div class="still_animate_img">
-              <img src="./images/Productive Squad Logo-03.png" alt="" class=" img-fluid">
+      </section>
+    </main>
+    <!-- <section class="section_animate" id="loader">
+      <div class="container ">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="animation_spinner">
+              <div class="animated_img">
+                <img src="./images/Productive Squad Logo-02.png" alt="" class=" img-fluid">
+              </div>
+              <div class="still_animate_img">
+                <img src="./images/Productive Squad Logo-03.png" alt="" class=" img-fluid">
+              </div>
             </div>
           </div>
         </div>
+      
       </div>
-
+      
+      </section> -->
+    <div class="footer-basic">
+      <footer>
+        <div class="social"><a href="https://www.facebook.com/profile.php?id=100087450259352" target="_blank">
+          <i class="fa-brands fa-facebook-f"></i>
+          </a><a href="https://www.instagram.com/invites/contact/?i=1x7yjsr9if4tx&utm_content=pyplvia" target="_blank">
+          <i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/productive-squad-7807a3256" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        <ul class="list-inline">
+          <li class="list-inline-item"><a href="./index.html">Home</a></li>
+          <li class="list-inline-item"><a href="#services">Services</a></li>
+          <li class="list-inline-item"><a href="./About_us.html">About</a></li>
+        </ul>
+        <p class="copyright">productive squad © 2022</p>
+      </footer>
     </div>
-
-  </section>
-  <div class="footer-basic">
-    <footer>
-      <div class="social"><a href="https://www.facebook.com/profile.php?id=100087450259352" target="_blank">
-        <i class="fa-brands fa-facebook-f"></i>
-      </a><a href="https://www.instagram.com/invites/contact/?i=1x7yjsr9if4tx&utm_content=pyplvia" target="_blank">
-        <i class="fa-brands fa-instagram"></i></a>
-      <a href="https://www.linkedin.com/in/productive-squad-7807a3256" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-
-
-    </div>
-      <ul class="list-inline">
-        <li class="list-inline-item"><a href="./index.html">Home</a></li>
-        <li class="list-inline-item"><a href="#services">Services</a></li>
-        <li class="list-inline-item"><a href="./About_us.html">About</a></li>
-
-      </ul>
-      <p class="copyright">productive squad © 2022</p>
-    </footer>
-  </div>
-</body>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-  integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
-  integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
-<script src="./js/script.js"></script>
-
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
+  <script src="./js/script.js"></script>
 </html>
